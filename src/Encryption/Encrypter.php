@@ -3,9 +3,9 @@
 namespace Wll\Encrypt\Encryption;
 
 use RuntimeException;
-use Wll\Encrypt\Contracts\DecryptException;
-use Wll\Encrypt\Contracts\EncryptException;
-use Wll\Encrypt\Contracts\Encrypter as EncrypterContract;
+use Wll\Encrypt\Contracts\Encryption\DecryptException;
+use Wll\Encrypt\Contracts\Encryption\EncryptException;
+use Wll\Encrypt\Contracts\Encryption\Encrypter as EncrypterContract;
 
 class Encrypter implements EncrypterContract
 {
