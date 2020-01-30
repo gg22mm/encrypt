@@ -1,0 +1,22 @@
+{
+    "name": "wll/encrypt",
+    "type": "library",
+	"description": "php-encrypt",
+    "require": {
+        "php": ">=7.0"
+    },
+	"keywords":["php-encrypt","hyperf","laravel"],
+    "license":"MIT",
+    "authors": [
+        {
+            "name": "gg22mm",
+            "email": "gg22mm@qq.com"
+        }
+    ],
+	"autoload": {
+		"psr-4": {
+			"Wll\\Encrypt\\": "src"
+		}
+	},
+    "minimum-stability": "dev"
+}
