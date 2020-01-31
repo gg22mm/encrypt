@@ -8,7 +8,7 @@ encrypt可逆加密,从laravel中提取出来,用于php 比如hyperf框架，其
 composer require wll/encrypt
 ```
 
-2、 发布配置生成文件:config/autoload/hashing.php
+2、 发布配置生成文件:config/autoload/encrypt.php
 ```bash
 bin/hyperf.php vendor:publish wll/encrypt
 ```
@@ -31,4 +31,5 @@ use Wll\Encrypt\Encryption\EncryptionHyperfServiceProvider;		//hyperf 中使用
    //
    return ['pass'=>$pass,'descPass'=>$descPass];
 }
+
 
