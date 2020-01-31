@@ -5,8 +5,8 @@ namespace  Wll\Encrypt\Encryption;
 use RuntimeException;
 use Illuminate\Support\Str;
 use Illuminate\Support\ServiceProvider;
-
-class EncryptionServiceProvider extends ServiceProvider
+//laravel 专用
+class EncryptionLaravelServiceProvider extends ServiceProvider
 {
     /**
      * Register the service provider.
@@ -15,7 +15,7 @@ class EncryptionServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('encrypter_wll', function ($app) {
+        $this->app->singleton('laravel.encrypter', function ($app) {
             $config = $app->make('config')->get('app');
 
             // If the key starts with "base64:", we will need to decode the key before handing

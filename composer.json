@@ -5,7 +5,7 @@
     "require": {
         "php": ">=7.0"
     },
-	"keywords":["php-encrypt","hyperf","laravel"],
+	"keywords":["php","hyperf","laravel","encrypt"],
     "license":"MIT",
     "authors": [
         {
