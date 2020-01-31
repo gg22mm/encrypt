@@ -12,7 +12,7 @@ class EncryptionHyperfServiceProvider
     public function register($config=[])
     {
        //获取配置文件
-        if(empty($config)){
+        if(!$config){
             $config['key']=config('encrypt.key', 'base64:Wmp8pOvKkx58GWU32C5C6IBiXrmUR6O8Dn4Z7/GHiKs=');
             $config['cipher']=config('encrypt.cipher', 'AES-256-CBC');
         }
