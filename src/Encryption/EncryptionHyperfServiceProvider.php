@@ -13,8 +13,8 @@ class EncryptionHyperfServiceProvider
     {
        //获取配置文件
         if(empty($config)){
-            $config['key']='base64:Wmp8pOvKkx58GWU32C5C6IBiXrmUR6O8Dn4Z7/GHiKs=';
-            $config['cipher']='AES-256-CBC';
+            $config['key']=config('encrypt.key', 'base64:Wmp8pOvKkx58GWU32C5C6IBiXrmUR6O8Dn4Z7/GHiKs=');
+            $config['cipher']=config('encrypt.cipher', 'AES-256-CBC');
         }
         // If the key starts with "base64:", we will need to decode the key before handing
         // it off to the encrypter. Keys may be base-64 encoded for presentation and we

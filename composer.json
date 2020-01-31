@@ -18,5 +18,10 @@
 			"Wll\\Encrypt\\": "src"
 		}
 	},
+    "extra": {
+      "hyperf": {
+        "config": "Wll\\Encrypt\\ConfigProvider"
+      }
+    },
     "minimum-stability": "dev"
 }
